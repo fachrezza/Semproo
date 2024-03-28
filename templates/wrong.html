@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ye....</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .back-button {
+            margin-top: 20px;
+            background-color: #363636; /* Warna pink */
+            color: white; /* Warna teks putih */
+            padding: 10px 20px; /* Ukuran padding */
+            border-radius: 5px; /* Sudut border */
+            text-decoration: none; /* Menghapus garis bawah */
+            transition: background-color 0.3s; /* Animasi saat hover */
+        }
+        .back-button:hover {
+            background-color: #181818; /* Warna pink yang lebih terang saat hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>GAUSAH BOHONG LU JAMET!!!</h2>
+        <img src="{{ url_for('static', filename='mampuss.jpg') }}" alt="img">
+        <a href="javascript:history.back()" class="back-button">Back</a>
+    </div>
+</body>
+</html>

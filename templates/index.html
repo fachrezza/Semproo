@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+    <style>
+        #confirmation {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 9999;
+        }
+
+        #confirmation button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="confirmation">
+        <p>APAKAH KAMU SUDAH SEMPRO?</p>
+        <button onclick="redirectTo('/congrats')">Sudah</button>
+        <button onclick="redirectTo('/wrong')">Belum</button>
+    </div>
+</body>
+</html>
