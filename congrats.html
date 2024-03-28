@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ye....</title>
+    <title>Congratulations</title>
     <style>
         body, html {
             height: 100%;
             margin: 0;
             display: flex;
+            background-color: #ff69b4;
             justify-content: center;
             align-items: center;
             text-align: center;
+            color: #ff69b4;
         }
         .container {
             max-width: 600px;
@@ -27,7 +29,7 @@
         }
         .back-button {
             margin-top: 20px;
-            background-color: #363636; /* Warna pink */
+            background-color: #ff69b4; /* Warna pink */
             color: white; /* Warna teks putih */
             padding: 10px 20px; /* Ukuran padding */
             border-radius: 5px; /* Sudut border */
@@ -35,14 +37,15 @@
             transition: background-color 0.3s; /* Animasi saat hover */
         }
         .back-button:hover {
-            background-color: #181818; /* Warna pink yang lebih terang saat hover */
+            background-color: #ff1493; /* Warna pink yang lebih terang saat hover */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>GAUSAH BOHONG LU JAMET!!!</h2>
-        <img src="{{ url_for('static', filename='mampuss.jpg') }}" alt="img">
+        <h2>CONGRATSS YAA SEMPRONYAAAA!!!!!!!!!!!</h2>
+        <p>SEMOGA CEPAT WISUDAAA YAAAAA BB!!!</p>
+        <img src="/static/bb.jpg" alt="img">
         <a href="javascript:history.back()" class="back-button">Back</a>
     </div>
 </body>

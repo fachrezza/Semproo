@@ -27,13 +27,25 @@
             padding: 10px 20px;
             cursor: pointer;
         }
+        .back-button {
+            margin-top: 20px;
+            background-color: #363636; /* Warna pink */
+            color: white; /* Warna teks putih */
+            padding: 10px 20px; /* Ukuran padding */
+            border-radius: 5px; /* Sudut border */
+            text-decoration: none; /* Menghapus garis bawah */
+            transition: background-color 0.3s; /* Animasi saat hover */
+        }
+        .back-button:hover {
+            background-color: #181818; /* Warna pink yang lebih terang saat hover */
+        }
     </style>
 </head>
 <body>
     <div id="confirmation">
         <p>APAKAH KAMU SUDAH SEMPRO?</p>
-        <button onclick="redirectTo('/congrats')">Sudah</button>
-        <button onclick="redirectTo('/wrong')">Belum</button>
+        <a href="/congrats.html" class="back-button">Sudah</a>
+        <a href="/wrong.html" class="back-button">Belum</a>
     </div>
 </body>
 </html>
